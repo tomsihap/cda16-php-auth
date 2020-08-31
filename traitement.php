@@ -61,3 +61,22 @@ else {
     $_SESSION['error'][] = "Erreur de connexion.";
     header("Location: login.php");
 }
+
+
+
+/**
+ * $_SESSION['user'] = $user rend le tableau suivant :
+ *
+ * $_SESSION = [
+ *     'user' => $user
+ * ];
+ *
+ *
+ * $_SESSION['error'][] = "Erreur de connexion." rend le tableau suivant :
+ *
+ * $_SESSION = [
+ *     'error' => [
+ *           'Erreur de connexion',
+ *     ],
+ * ];
+ */
