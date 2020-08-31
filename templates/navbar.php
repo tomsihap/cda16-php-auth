@@ -6,7 +6,9 @@
 
             <?php if (isset($_SESSION['user'])) : ?>
                 <li class="nav-item active">
-                    <a class="nav-link" href="user.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="user.php">
+                        Bienvenue, <?= $_SESSION['user']['mail'] ?> !
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Déconnexion</a>
